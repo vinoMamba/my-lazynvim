@@ -22,7 +22,7 @@ return {
   --   },
   -- },
   --------------------------------------------------------------
-  -- -- disable plugins { "folke/trouble.nvim", enabled = false }
+
   { "ggandor/leap.nvim", enabled = false },
   { "theniceboy/nvim-deus" },
   {
@@ -167,5 +167,14 @@ return {
       vim.g.joshuto_use_neovim_remote = 1
       vim.g.joshuto_floating_window_winblend = 0
     end,
+  },
+
+  {
+    "akinsho/bufferline.nvim",
+    event = "VeryLazy",
+    keys = {
+      { "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", desc = "Toggle pin" },
+      { "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete non-pinned buffers" },
+    },
   },
 }

@@ -35,4 +35,4 @@ map("n", "<up>", "<cmd>:res -5<CR>", { desc = "resize up" })
 map("n", "<left>", "<cmd>:vertical resize-5<CR>", { desc = "resize up" })
 map("n", "<right>", "<cmd>:vertical resize+5<CR>", { desc = "resize up" })
 
-map({ "n" }, "jo", "<cmd>Joshuto<cr>", { desc = "open Joshuto", noremap = true })
+map({ "n" }, "<leader>jo", "<cmd>Joshuto<cr>", { desc = "open Joshuto", noremap = true })
