@@ -22,7 +22,8 @@ return {
   --   },
   -- },
   --------------------------------------------------------------
-
+  -- -- disable plugins { "folke/trouble.nvim", enabled = false }
+  { "ggandor/leap.nvim", enabled = false },
   { "theniceboy/nvim-deus" },
   {
     "LazyVim/LazyVim",
@@ -49,12 +50,30 @@ return {
         function()
           require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").get_root() })
         end,
-      }
+      },
     },
     opts = {
       window = {
         position = "right",
-      }
-    }
-  }
+      },
+    },
+  },
+
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    vscode = true,
+    opts = {},
+    keys = {
+      {
+        "\\",
+        mode = { "n", "x", "o" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+      { "S", false },
+    },
+  },
 }
