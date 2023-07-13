@@ -22,7 +22,6 @@ return {
   --   },
   -- },
   --------------------------------------------------------------
-
   { "ggandor/leap.nvim", enabled = false },
   { "theniceboy/nvim-deus" },
   {
@@ -168,7 +167,6 @@ return {
       vim.g.joshuto_floating_window_winblend = 0
     end,
   },
-
   {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
