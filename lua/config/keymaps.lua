@@ -13,7 +13,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- basic
-map({ "i" }, "jk", "<Esc>", { desc = "Quit Insert Mode", noremap = true }) -- buffers
+map({ "i" }, "jk", "<Esc>", { desc = "Quit Insert Mode", noremap = true })
 map({ "v", "n" }, "S", "<cmd>w<cr><esc>", { desc = "Save file", noremap = true })
 map({ "n" }, "Q", "<cmd>q<cr><esc>", { desc = "Quit", noremap = true })
 
